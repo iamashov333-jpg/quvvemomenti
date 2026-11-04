@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qüvvə Momenti & Sadə Mexanizmlər | 8-ci Sinif Fizika Portalı</title>
+  <meta name="description" content="8-ci sinif fizika kursu üçün Qüvvə Momenti, Lingin tarazlıq şərti, interaktiv simulyator, kalkulyator və 25 suallıq bilik yoxlama testi.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20width=%22100%22%20height=%22100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+</head>
+<body>
+
+  <!-- Header & Naviqasiya -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">⚖️</span>
+        <span>FizikaPortalı</span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Menyu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#nezeriyye" class="nav-link">Nəzəriyyə</a></li>
+        <li><a href="#biomexanika" class="nav-link">Gündəlik Həyat</a></li>
+        <li><a href="#kalkulyator" class="nav-link">Kalkulyator</a></li>
+        <li><a href="#simulyator" class="nav-link">Simulyator</a></li>
+        <li><a href="#quiz" class="nav-link active-cta">25 Sual Quiz</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <span class="hero-badge">8-ci Sinif Fizika Dərsi</span>
+      <h1 class="hero-title">Qüvvə Momenti və Lingin Tarazlığı</h1>
+      <p class="hero-subtitle">
+        Mexanikanın ən maraqlı qanunlarından biri olan Qüvvə Momentini interaktiv simulyasiyalarla öyrənin, düsturları tətbiq edin və 25 suallıq testlə biliyinizi yoxlayın.
+      </p>
+      <div class="hero-actions">
+        <a href="#simulyator" class="btn btn-primary">🎮 Simulyatoru Sına</a>
+        <a href="#quiz" class="btn btn-secondary">📝 Testə Başla (25 Sual)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nəzəriyyə Bölməsi -->
+  <section id="nezeriyye" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Əsas Anlayışlar</span>
+        <h2 class="section-title">Qüvvə Momenti Nədir?</h2>
+        <p class="section-desc">Cismin fırlanma hərəkəti yaratmaq qabiliyyətini xarakterizə edən əsas fiziki kəmiyyət.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">📐</div>
+          <h3>Qüvvə Qolu (d)</h3>
+          <p>Fırlanma oxundan qüvvənin təsir xəttinə çəkilmiş ən qısa (perpendikulyar) məsafəyə <strong>qüvvə qolu</strong> deyilir.</p>
+          <div class="formula-highlight">Ölçü vahidi: metr (m)</div>
+          <p>Qüvvə oxdan nə qədər uzaqdan tətbiq olunarsa, qolu bir o qədər böyük olar.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⚡</div>
+          <h3>Qüvvə Momenti (M)</h3>
+          <p>Qüvvənin qiyməti ilə onun qolunun hasilinə bərabər olan fiziki kəmiyyətə <strong>qüvvə momenti</strong> deyilir.</p>
+          <div class="formula-highlight">M = F · d</div>
+          <p>Beynəlxalq Sistemdə vahidi: <strong>N · m</strong> (Nyuton-metr). Vektorial kəmiyyətdir.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🔄</div>
+          <h3>Fırlanma İstiqaməti</h3>
+          <p>Momentlərin toplanmasında işarə qaydası:</p>
+          <div class="formula-highlight">Əksinə (+), Saat əqrəbi (-)</div>
+          <p>Saat əqrəbinin əksi istiqamətindəki fırlanma müsbət (+), saat əqrəbi istiqamətindəki fırlanma mənfi (-) qəbul olunur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ling və Momentlər Qaydası -->
+  <section class="section-block" style="background: rgba(255, 255, 255, 0.015);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tarazlıq Şərti</span>
+        <h2 class="section-title">Momentlər Qaydası və Qızıl Qayda</h2>
+        <p class="section-desc">Arximed: "Mənə dayaq nöqtəsi verin, Yeri yerindən oynadım!"</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">⚖️</div>
+          <h3>Lingin Tarazlıq Şərti</h3>
+          <p>Tərpənməz fırlanma oxuna malik cismin tarazlıqda qalması üçün ona təsir edən qüvvələrin momentlərinin cəbri cəmi sıfır olmalıdır:</p>
+          <div class="formula-highlight">F₁ · d₁ = F₂ · d₂</div>
+          <p>Qüvvələrin nisbəti qolların tərs nisbətinə bərabərdir: <strong>F₁ / F₂ = d₂ / d₁</strong></p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🏆</div>
+          <h3>Mexanikanın Qızıl Qaydası</h3>
+          <p>Heç bir sadə mexanizm <strong>işdə qazanc vermir</strong>.</p>
+          <div class="formula-highlight">Qüvvədə qazanc = Yolda itki</div>
+          <p>Qüvvədə neçə dəfə qazanırıqsa, qət edilən məsafədə bir o qədər dəfə itiririk.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">⚙️</div>
+          <h3>Sadə Mexanizm Növləri</h3>
+          <p>8-ci sinifdə öyrənilən əsas sadə mexanizmlər:</p>
+          <div class="formula-highlight">Ling, Tərpənən & Tərpənməz Blok</div>
+          <p>Tərpənməz blok yalnız istiqaməti dəyişir, tərpənən blok isə qüvvədə 2 dəfə qazanc təmin edir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Biomexanika və Praktiki Həyat -->
+  <section id="biomexanika" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Praktiki Tətbiqlər</span>
+        <h2 class="section-title">Gündəlik Həyatda və Biomexanikada</h2>
+        <p class="section-desc">Qüvvə momentinin ətrafımızda və bədənimizdə necə işlədiyini kəşf edin.</p>
+      </div>
+
+      <div class="example-box">
+        <div class="example-item">
+          <h3>🚪 Niyə Qapı Dəstəyi Kənarda Olur?</h3>
+          <p>Dəstək fırlanma oxundan (petlədən) nə qədər uzaq olarsa, qüvvə qolu (d) bir o qədər böyük olar. Nəticədə barmaq ucu ilə çox cüzi qüvvə sərf edərək böyük qüvvə momenti yaradıb qapını rahat aça bilirik.</p>
+        </div>
+
+        <div class="example-item">
+          <h3>🔧 Qayka Açarı (İngilis Açarı)</h3>
+          <p>Bərk sıxılmış boltu əllə açmaq mümkün deyil. Lakin uzun saplı açardan istifadə etdikdə qüvvə qolu 10-20 dəfə artır və həmin qüvvə ilə bolt dərhal açılır.</p>
+        </div>
+
+        <div class="example-item">
+          <h3>💪 İnsan Qolu və Dirsək Oynağı</h3>
+          <p>İnsan dirsəyi III növ ling kimi fəaliyyət göstərir. Biseps əzələsi dirsək oynağına çox yaxın məsafədən birləşir (qısa qol). Əlimizdəki yükü saxlamaq üçün əzələmiz yükün çəkisindən dəfələrlə böyük dartıcı qüvvə hasil edir.</p>
+        </div>
+
+        <div class="example-item">
+          <h3>🏋️ Ağır Yük Qaldırarkən Onurğa</h3>
+          <p>Beli bükərək ağır yük qaldıranda yükün onurğanın fırlanma oxuna olan məsafəsi böyüyür və bel fəqərələrinə yüzlərlə kq-a bərabər zədələyici moment düşür. Düzgün qayda: dizi bükərək qaldırmaqdır!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kalkulyator Bölməsi -->
+  <section id="kalkulyator" class="section-block" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Online Alət</span>
+        <h2 class="section-title">Qüvvə Momenti Kalkulyatoru</h2>
+        <p class="section-desc">Dəyərləri daxil edin və anında yaranan qüvvə momentini hesablayın.</p>
+      </div>
+
+      <div class="calc-wrapper">
+        <div class="calc-inputs">
+          <div class="input-group">
+            <label for="calc-f">Tətbiq olunan Qüvvə - F (Nyuton, N):</label>
+            <input type="number" id="calc-f" value="25" min="0" step="any">
+          </div>
+          <div class="input-group">
+            <label for="calc-d">Qüvvə Qolu - d (Metr, m):</label>
+            <input type="number" id="calc-d" value="0.8" min="0" step="any">
+          </div>
+          <div class="input-group">
+            <label for="calc-angle">Qüvvə ilə Qol arasındakı Bucaq - α (Dərəcə, °):</label>
+            <input type="number" id="calc-angle" value="90" min="0" max="180">
+          </div>
+          <button id="calculate-btn" class="btn btn-primary" style="margin-top: 10px;">Hesabla</button>
+        </div>
+
+        <div class="calc-result-box">
+          <h4>NƏTİCƏ (QÜVVƏ MOMENTİ):</h4>
+          <div class="calc-output" id="calc-result">20.00 N·m</div>
+          <div class="calc-step" id="calc-formula-step">M = F · d = 25 N · 0.8 m = <strong>20.00 N·m</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İnteraktiv Simulyator -->
+  <section id="simulyator" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Laboratoriya</span>
+        <h2 class="section-title">İnteraktiv Ling Simulyatoru</h2>
+        <p class="section-desc">Çəkiləri və qolları tənzimləyərək lingin tarazlıq halını canlı müşahidə edin.</p>
+      </div>
+
+      <div class="simulator-container">
+        <div class="sim-visual-area">
+          <div class="lever-base-line"></div>
+          <div class="lever-fulcrum"></div>
+          <div class="lever-beam" id="lever-beam">
+            <div class="lever-weight weight-left" id="weight-left" style="left: 20%;" data-weight="30N"></div>
+            <div class="lever-weight weight-right" id="weight-right" style="left: 80%;" data-weight="30N"></div>
+          </div>
+        </div>
+
+        <div class="sim-status-banner" id="balance-status">
+          <span class="status-balanced">⚖️ TAM TARAZLIQDADIR! (M₁ = M₂)</span>
+        </div>
+
+        <div class="sim-controls-grid">
+          <!-- Sol tərəf -->
+          <div class="sim-side-panel">
+            <h4>🔵 Sol Tərəf (1) <span id="sim-m1" style="color: var(--primary);">60.0 N·m</span></h4>
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Qüvvə (F₁):</span>
+                <strong id="val-f1">30 N</strong>
+              </div>
+              <input type="range" id="sim-f1" min="5" max="100" value="30" step="5">
+            </div>
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Qol uzunluğu (d₁):</span>
+                <strong id="val-d1">2.0 m</strong>
+              </div>
+              <input type="range" id="sim-d1" min="0.5" max="3" value="2.0" step="0.1">
+            </div>
+          </div>
+
+          <!-- Sağ tərəf -->
+          <div class="sim-side-panel">
+            <h4>🟢 Sağ Tərəf (2) <span id="sim-m2" style="color: var(--secondary);">60.0 N·m</span></h4>
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Qüvvə (F₂):</span>
+                <strong id="val-f2">30 N</strong>
+              </div>
+              <input type="range" id="sim-f2" min="5" max="100" value="30" step="5">
+            </div>
+            <div class="slider-group">
+              <div class="slider-header">
+                <span>Qol uzunluğu (d₂):</span>
+                <strong id="val-d2">2.0 m</strong>
+              </div>
+              <input type="range" id="sim-d2" min="0.5" max="3" value="2.0" step="0.1">
+            </div>
+          </div>
+        </div>
+
+        <div class="sim-footer-bar">
+          <button id="auto-balance-btn" class="btn btn-secondary">⚡ Sağ tərəfi avtomatik tarazlaşdır</button>
+          <span style="font-size: 0.85rem; color: var(--text-muted);">Məsləhət: Slayderləri çəkərək lingin necə əyildiyini izləyin.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 25 Suallıq Quiz Bölməsi -->
+  <section id="quiz" class="section-block">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">İmtahana Hazırlıq</span>
+        <h2 class="section-title">8-ci Sinif Bilik Testi (25 Sual)</h2>
+        <p class="section-desc">Mövzunu nə dərəcədə yaxşı mənimsədiyinizi yoxlayın. Hər bir sual 8-ci sinif dərslik və DİM formatına uyğundur.</p>
+      </div>
+
+      <div class="quiz-wrapper">
+        <!-- Nəticə Kartı (Bitəndə göstərilir) -->
+        <div id="quiz-result-card" class="quiz-result-card" style="display: none;"></div>
+
+        <!-- Sual Naviqasiya Paneli -->
+        <div class="quiz-nav-container">
+          <div class="quiz-nav-header">
+            <span>Sual Seçimi:</span>
+            <span id="answered-status">Cavablandırılıb: 0 / 25</span>
+          </div>
+          <div class="question-nav-list" id="question-nav-list"></div>
+        </div>
+
+        <!-- Sual Kartı -->
+        <div class="quiz-card" id="quiz-card-body">
+          <div class="quiz-card-header">
+            <span class="q-current-badge" id="current-q-num">Sual 1 / 25</span>
+            <h3 class="q-title" id="question-text">Yüklənir...</h3>
+          </div>
+
+          <div class="quiz-options" id="quiz-options"></div>
+
+          <!-- İzah Qutusu -->
+          <div class="explanation-box" id="question-explanation" style="display: none;"></div>
+        </div>
+
+        <!-- İdarəetmə Düymələri -->
+        <div class="quiz-actions">
+          <button id="prev-btn" class="btn btn-secondary">⬅️ Əvvəlki</button>
+          <button id="submit-btn" class="btn btn-primary">Testi Tamamla və Qiyməti Gör 🏁</button>
+          <button id="next-btn" class="btn btn-secondary">Növbəti ➡️</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>8-ci Sinif Fizika Tədris Portalı &copy; 2026. Bütün hüquqlar qorunur.</p>
+      <p style="margin-top: 5px; font-size: 0.8rem; color: #64748b;">Bu layihə Netlify üzərində birbaşa yayımlanmaq üçün hazırlanmışdır.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/simulator.js"></script>
+  <script src="js/quiz.js"></script>
+</body>
+</html>
